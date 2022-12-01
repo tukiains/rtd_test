@@ -1,3 +1,4 @@
+version: 2
 
 build:
    os: ubuntu-22.04
@@ -5,5 +6,5 @@ build:
       python: "3.10"
 
 python:
-  install:
-    - pip install -r requirements.txt
+   install:
+   - requirements: requirements.txt
