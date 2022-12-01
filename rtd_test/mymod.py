@@ -1,7 +1,7 @@
 import netCDF4
 
 
-def myfun(x):
+def myfun(x: str | float):
     """
     Args:
         x (int): blabla
@@ -13,4 +13,10 @@ def myfun(x):
 
     """
     y = netCDF4.Dataset
-    return x * 2
+    if isinstance(x, float):
+        return x * 2
+    else:
+        return 23
+
+
+myfun(2)
